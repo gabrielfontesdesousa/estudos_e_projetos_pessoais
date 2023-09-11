@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container-header{
+    display: flex;
+    height: fit-content;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    background-color: rgb(17, 74, 196);
+    }
+    .noticias{
+        color: white;
+        font-family: 'fonte';
+    }
+    .futebol{
+        color: white;
+        font-family: 'fonte';
+    }
+    .esporte{
+        color: white;
+        font-family: 'fonte';
+    }
+    .globo-esporte{
+        color: white;
+        font-family: 'fonte';
+    }
+    .g1{
+        color: white;
+        font-family: 'fonte';
+    }
+    ol li a{
+        text-decoration: none;
+    }
+    ol li{
+        list-style: none;
+        align-items: center;
+        padding: 25px;
+    }
+    ol{
+        display: flex;
+        height: 100%;
+    }
