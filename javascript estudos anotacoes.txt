@@ -1,0 +1,153 @@
+java script fundamentos
+
+
+oque é java script?
+é uma linguagem de alto nivel;
+considerada multiparadigma ou seja, possibilita que programemos em procedural, funcional e tambem de forma
+orientada a objetos;
+não necessita de setup, pode ser executada no navegador;
+presente nos frameworks de front end: React, vue, angular;
+pode ser utiizada no back end tambem (node.js;);
+o nome correto é ecma script;
+
+
+na aba console do inspecionar do navegador, é possivel monitorar o código java script executado;
+
+anotacoes da aula:
+
+o ponto e virgula é opcional, sendo obrigatorio apenas em alguns momentos especificos.
+
+ao linkar o html com o java script dentro da tag head (esse é o correto), utilizando o código:
+<script src="script.js" defer><script>
+o atributo "defer" faz com que o javascript seja executado somente
+após o carregamento completo do html.
+
+declaração de variaveis:
+var x = 1 (forma mais antiga e menos utilizada, esta maneira é inutilizada hoje em dia)
+let y = 1 (maneira mais moderna, e mais utilizada)
+const y = 1 (maneira moderna porem o valor da variavel não pode ser alterada)
+
+tipos de dados:
+javascript é uma linguagem de tipagem dinamica, ou seja, ao criar uma variavel e atribuir um valor,
+o tipo dessa variavel será automaticamente detectada pela linguagem por exemplo:
+ao fazermos:
+const name = "gabriel fontes";
+a linguagem detecta que esta varivel é do tipo string.
+
+o código:
+console.log("texto"); exibe um texto no console.
+
+uma forma de descobrir o tipo de uma variavel é usando o código:
+console.log(typeof variavel);
+que retornará no console do navegador o tipo da variavel.
+
+o java script não diferencia int`s de floats, para o java script todo numero é igual, sendo eles com casas decimais
+ou não.
+
+o tipo boolean:
+variaveis do tipo boolean só aceita dois tipos de valores, "true" ou "false" que geralmente servem para checar
+condições
+
+é possivel declarar uma variavel sem valor nenhum com o código:
+let variavel = null; (null é considerado do tipo objeto para o java script, porem ao atribuir outro valor a linguagem
+identifica o seu tipo automaticamente)
+geralmente utilizado para criar uma variavel que será atribuida um valor no futuro.
+
+arrays:
+arrays são uma especie de lista de dados, eles geralmente devem ser do mesmo tipo,
+porem podem ser de tipos variados. sintaxe:
+const variavel = ['dado1', 'dado2', 'dado3', 'dado4'];
+é considerado do tipo objeto;
+
+objetos:
+objetos tem valores declarados entre chaves e são separados entre virgulas. costuma variar o tipo de dado
+exemplo:
+const user = { email: 'gabrielfontesdesousa@gmail.com', password: '12345678', idade: 16}
+os valores são declarados por meio de dois pontos e não por igual.
+eles são considerados do tipo objetos(obviamente)
+
+métodos de string:
+objetos tem propriedades e métodos
+
+alguns métodos:
+
+const fullname = 'gabriel fontes'
+console.log('fullname.lenght') (mostra o numero de caracteres de uma string)
+
+como separar uma string de um array em lista:
+const fullname = 'gabriel fontes'
+const StringToArray = fullname.split(' ')
+console.log(StringToArray)
+
+transformando todas as letras de um array em caixa alta:
+console.log(variavel.touppercase())
+transformando todas as letras de um array em caixa baixa:
+console.log(variavel.tolowercase())
+
+é utilizado por exemplo quando ao receber os dados de um banco de dados a case que eu quero não é como
+esta guardado no meu banco de dados.
+
+como encontrar o numero que se encontra uma letra em uma string
+const fullname = 'gabriel fontes'
+console.log(fullname.indexof('fontes'))
+retornará o numero de onde se encontra a primeira letra da palavra inserida dentro do indexof,
+caso a palavra não seja encontrada sera retornara o valor -1.
+
+como extrair uma parte de uma string:
+é utilizado o método slice que significa fatiar
+
+console.log(fullname.slice(numero de onde comeca, numero de onde termina))
+exemplo pratico:
+const fullname = 'gabriel fontes'
+console.log(fullname.slice(0, 6))
+retornará o nome gabriel 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
