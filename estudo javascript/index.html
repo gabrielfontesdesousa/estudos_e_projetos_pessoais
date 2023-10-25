@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabriel fontes</title>
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area">
+        <form action="" method="post" id="form">
+            <input type="text" name="num1" id="num1" placeholder="digite o primeiro numero: ">
+            <input type="text" name="num2" id="num2" placeholder="digite o segundo numero : "> 
+        </form>
+        <button id="r" onclick="soma()">resultado</button>
+    </div>
+   
+
+<script>
+ 
+ function soma(){
+    let num1 = parseFloat(document.getElementById('num1').value)
+    let num2 = parseFloat(document.getElementById('num2').value)
+
+    const r = num1 + num2
+    document.getElementById('r').innerHTML = "o resultado é: " + r
+    
+    
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+function clicou() { 
+    let a = window.document.getElementById('area').innerHTML = 'clicou'  
+    a = document.getElementById('area').style.color = 'red'
+}
+function entrou() {
+    let a = document.getElementById('area').innerHTML = ('entrou')
+}
+function saiu(){
+    let a = document.getElementById('area').innerHTML = ('saiu')
+    let b = document.getElementById('area').style.color = 'black'
+    }
+function nada(){
+    let a = document.getElementById('area').innerText = ('nada')
+}
+*/
+</script>
+</body>
+</html>

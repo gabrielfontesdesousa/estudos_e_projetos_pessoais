@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Soma</title>
+</head>
+<body>
+    <h1>Calculadora de Soma</h1>
+    <form id="calculator-form">
+        <input type="text" id="num1" placeholder="Número 1">
+        <input type="text" id="num2" placeholder="Número 2">
+        <button type="button" onclick="calculateSum()">Calcular</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            // Obtenha os valores dos campos de entrada
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            // Verifique se os valores são numéricos
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById("result").innerHTML = "Por favor, insira números válidos.";
+            } else {
+                // Realize a soma
+                var sum = num1 + num2;
+
+                // Exiba o resultado
+                document.getElementById("result").innerHTML = "Resultado: " + sum;
+            }
+        }
+    </script>
+</body>
+</html>
