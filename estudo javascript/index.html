@@ -8,24 +8,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="area">
+    <div id="calc">
         <form action="" method="post" id="form">
+            <div class="calc">
+                <h1>CALCULADORA</h1>
+                <h5 class="op">escolha uma operação</h5>
+
+                <label for="operacao">soma</label>
+                <input type="button" name="chk" id="operacao" style="width: 30px;" >
+
+                <label for="operacao">subtração</label>
+                <input type="button" name="chk" id="operacao">
+
+                <label for="operacao">multiplicação</label>
+                <input type="button" name="chk" id="operacao">
+
+                <label for="operacao">divisão</label>
+                <input type="button" name="chk" id="operacao">
+
+                <button type="submit" id="submit">enviar</button>
+             </div>
+
             <input type="text" name="num1" id="num1" placeholder="digite o primeiro numero: ">
             <input type="text" name="num2" id="num2" placeholder="digite o segundo numero : "> 
+
         </form>
-        <button id="r" onclick="soma()">resultado</button>
+
     </div>
+    </div>
+
    
 
 <script>
- 
- function soma(){
+
+ function calc(){
     let num1 = parseFloat(document.getElementById('num1').value)
     let num2 = parseFloat(document.getElementById('num2').value)
 
-    const r = num1 + num2
-    document.getElementById('r').innerHTML = "o resultado é: " + r
+    let continuar = 1
+
     
+
+    while (continuar == 1){
+
+    
+
+        switch (operacao){
+            case '1':
+
+
+        }
+    }
     
 
 
