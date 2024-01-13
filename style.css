@@ -1,0 +1,231 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(119, 119, 119);
+    display: flex;
+}
+
+/* seção de header*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 6.5rem;
+    background-color: black;
+    display: flex;
+    z-index: 10;  
+
+}
+.container-icones{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+}
+a.links:hover{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+a.links{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+/*search bar*/
+
+form {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border-radius: 13px;
+  }
+  
+  input {
+    color: #000000;
+    font-size: 28px;
+    width: 100%;
+    padding: 2px 5px 5px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 13px;
+  }
+  
+  label {
+    color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: px solid #000000;
+  }
+  
+  span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ff9100;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  input:focus + label span,
+  input:valid + label span {
+    transform: translateY(-150%);
+    font-size: 14px;
+    bottom: 10px;
+    color: #ffffff;
+  }
+  
+  input:focus + label::after,
+  input:valid + label::after {
+    transform: translateX(0%);
+  }
+  .search-bar-container{
+    position: relative;
+    height: 40px;
+    display: flex;
+    left: 25.5rem;
+    top: 1.7rem;
+}
+
+
+.logo{
+    position: relative;
+    top: -1rem;
+    margin-left: 30px;
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+}
+
+
+.search-bar-camp{
+    border-radius: 15px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.instagram{
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+}
+.container-instagram{
+    margin-left: 51rem;
+    display: flex;
+}
+/*seção de carrossel*/
+
+.d-block.w-100{
+    height: 487px;
+    object-fit: cover;
+}
+
+/* menus dropdown*/
+
+.menus{
+    background-color: #000000;
+    margin-top: em;
+    height: 3rem;
+}
+    
+nav li{
+    display: inline-block;
+}
+nav li a{
+    padding-left: 9rem;
+    font-size: 23px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+nav li a:hover{
+    width: fit-content;
+    text-decoration: none;
+    color: #848484;
+    text-shadow: 0 0 10px #000000;
+}
+
+
+
+
+
+
+/*seção de blocos de artigos */
+.section-site{
+    display: flex;
+    padding-top: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 29rem;
+    background-color: rgb(215, 215, 215);
+
+}
+
+/*containers dos artigos*/
+.esportivos-container{
+    width: 350px;
+    height: 402px;
+}
+.bones-container{
+    width: 350px;
+    height: 402px;
+}
+.camisetas-container{
+    width: 350px;
+    height: 402px;
+}
+
+
+
+/*imagens das seções*/
+#esportivos-img{
+    width: 350px;
+    height: 402px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+#bones-img{
+    width: 350px;
+    height: 402px;
+    object-fit: cover; 
+    border-radius: 35px;
+}
+#camisetas-img{
+    width: 350px;
+    height: 402px;
+    object-fit: cover;
+    border-radius: 35px;
+
+}
+.h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    background-color: black;
+}
+
